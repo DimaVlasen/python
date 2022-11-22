@@ -1,0 +1,9 @@
+import numpy as np 
+a = np.matrix('14 4 6; 5 -3 2; 10 -11 5')   
+print('A = ', a) 
+b = np.matrix('30; 15; 36')   
+print('B = ', b) 
+a_inv = np.linalg.inv(a) 
+print('A^-1 = ', a_inv) 
+x = a_inv.dot(b) 
+print('X = ', x) 

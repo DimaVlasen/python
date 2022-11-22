@@ -1,0 +1,4 @@
+import numpy as np 
+m = np.matrix('1  2 -3; 0 1 2; 0 0 1') 
+m_inverse = np.linalg.inv(m) 
+print('Inverse matrix m = ', m_inverse) 

@@ -1,0 +1,11 @@
+import numpy as np 
+a = np.matrix('1 2; 4 -1')  
+b = np.matrix('2 -3; -4 1') 
+c = a.dot(b) 
+d = b.dot(a) 
+result = c - d 
+print('a = ', a)  
+print('b = ', b) 
+print('c = ', c) 
+print('d = ', d) 
+print('result = ', result) 

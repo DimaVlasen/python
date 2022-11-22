@@ -1,0 +1,8 @@
+x_1=np.linspace(np.min(x), np.max(x)) 
+y_1=np.linspace(np.min(y), np.max(y)) 
+plt.plot(x,y, 'ro', x_1, y_1) 
+plt.title('Graph of the interpolation function') 
+plt.xlabel('x') 
+plt.ylabel('y') 
+plt.grid() 
+plt.show() 

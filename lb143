@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.linspace(0, 10, 10000)
+y = x 
+plt.title("Linear dependence in = x")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.grid()
+plt.plot(x, y, "r--")
+plt.show()
