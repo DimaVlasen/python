@@ -1,0 +1,27 @@
+import numpy as np  
+a = np.matrix('14 4 6; 5 -3 2; 10 -11 5')  
+print('A = ', a)  
+b = np.matrix('30; 15; 36')  
+print('B = ', b)  
+def kramer(a, b):  
+    a_det = np.linalg.det(a)  
+    print('Determinant of matrix A = ', a_det)  
+    if(a_det == 0):  
+        print('There is no solution of the system')  
+    else:  
+        x_n = np.matrix(a)  
+        x_n[:, 0] = b  
+        print('x_n = ', x_n)  
+        y_n = np.matrix(a)  
+        y_n[:, 1] = b  
+        print('y_n = ', y_n)  
+        z_n = np.matrix(a)  
+        z_n[:, 2] = b  
+        print('z_n = ', z_n)  
+        x = np.linalg.det(x_n) / a_det  
+        y = np.linalg.det(y_n) / a_det  
+        z = np.linalg.det(z_n) / a_det  
+        print('X = ', round(x, 5))  
+        print('Y = ', round(y, 5))  
+        print('Z = ', round(z, 5))  
+kramer(a, b) 
