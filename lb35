@@ -1,0 +1,4 @@
+import numpy as np 
+b = np.matrix('1 2 3 4; -2 1 -4 3; 3 -4 -1 2; 4 3 -2 -1') 
+b_det = np.linalg.det(b) 
+print(format(b_det, '.9g')) 
