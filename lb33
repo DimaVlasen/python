@@ -1,0 +1,5 @@
+import numpy as np 
+k = np.matrix('3 5; 6 -1') 
+l = np.matrix('2 1; -3 2') 
+result = k * l 
+print('Product od matrices k & l = ', result) 
