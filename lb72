@@ -1,0 +1,19 @@
+for i in range(len(mas_y)): 
+    mas_1.append(mas_y[i] - mas_y[i-1]) 
+mas_1.pop (0) 
+print('mas_1 = ', mas_1) 
+
+for j in range(len(mas_1)): 
+    mas_2.append(mas_1[j] - mas_1[j-1]) 
+mas_2.pop (0) 
+print('mas_2=',mas_2 ) 
+
+for k in range(len(mas_2)): 
+    mas_3.append(mas_2[k] - mas_2[k-1]) 
+mas_3.pop (0) 
+print('mas_3=',mas_3) 
+
+for l in range(len(mas_3)): 
+    mas_4.append(mas_3[l] - mas_3[l-1]) 
+mas_4.pop (0) 
+print('mas_4=',mas_4) 
