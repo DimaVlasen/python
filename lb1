@@ -1,0 +1,13 @@
+import math
+x1=4.8
+x2=6/7
+x1_1 = 3.16
+x2_2 = 2.14
+def f (x1, x1_1, x2, x2_2):
+dx1 = abs((math.sqrt(x1) - x1_1)/math.sqrt (x1))
+dx2 = abs((x2 - x2_2)/x2)
+if (dx1>dx2):
+ print
+else:
+ print
+f(x1,x1_1,x2,x2_2)
